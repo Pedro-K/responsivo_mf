@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Epilogue-eb";
+    src: url(./assets/fonts/Epilogue-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Epilogue-b";
+    src: url(./assets/fonts/Epilogue-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Epilogue";
+    src: url(./assets/fonts/Epilogue-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    background: #ece9fd;
+    padding: 3.75rem 1.438rem 4.125rem;
+    font-family: "Epilogue", sans-serif;
+    min-width: 18.75rem;
+}
+
+main{    
+    max-width: 20.625rem;
+    margin: 0 auto;
+}
+
+main h1{
+    font-family: "Epilogue-eb", sans-serif;
+    font-size: 2.5rem;
+    color: #090039;
+    margin-bottom: 0.938rem;
+}
+
+main p:first-child{
+    color: #7158ef;
+    letter-spacing: 0.188rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.063rem;
+}
+
+main h1 + p{
+    line-height: 2rem;
+    color: rgba(10, 0, 57, 0.64);
+    margin-bottom: 2rem;
+}
+
+main a{
+    color: #090039;
+    text-decoration: none;
+}
+
+main a:hover{
+    color: #7158ef;
+}
+
+main ul{
+    margin-top: 4.5rem;
+    list-style: none;
+}
+
+main ul li{
+    font-family: "Epilogue-b", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #090039;
+    max-width: 16.063rem;
+    display: flex;
+    gap: 2.375rem;
+
+}
+
+main ul li + li{
+    margin-top: 2rem;
+}
+
+main ul li span{
+    font-family: "Epilogue-eb", sans-serif;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    letter-spacing: -0.125rem;
+    min-width: 2.813rem;
+}
+
+@media (min-width:700px) {
+    body{
+        padding: 8rem;
+    }
+
+    main{
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+    
+    main section{
+        max-width: 485px;
+    }
+
+    ul li{
+        gap: 3.313rem;
+        max-width: 450px;
+        align-items: center;
+    }
+}
